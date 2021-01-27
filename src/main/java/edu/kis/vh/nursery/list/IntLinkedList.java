@@ -1,6 +1,6 @@
 package edu.kis.vh.nursery.list;
 
-public class IntLinkedList {
+public class IntLinkedList implements IntStack {
 
 	public static final int RETURN = -1;
 
@@ -21,6 +21,7 @@ public class IntLinkedList {
 		return last == null;
 	}
 
+	@Override
 	public boolean isFull() {
 		return false;
 	}
